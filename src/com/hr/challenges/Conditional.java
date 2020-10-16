@@ -10,9 +10,9 @@ public class Conditional {
 		int N = scanner.nextInt();
 		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-		int rem = N % 2;
+		
 
-		if (rem == 1) {
+		if (N % 2==1) {
 			System.out.println("Weird");
 		} else if (N >= 2 && N <= 5) {
 			System.out.println("Not Weird");
