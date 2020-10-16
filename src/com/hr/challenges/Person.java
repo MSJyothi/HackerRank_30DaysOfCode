@@ -26,7 +26,6 @@ public class Person {
 	public void amIOld() {
 		// Write code determining if this person's age is old and print the correct
 		// statement:
-		int age = getAge();
 		if (age < 13) {
 			System.out.println("You are young.");
 		} else if (age >= 13 && age < 18) {
