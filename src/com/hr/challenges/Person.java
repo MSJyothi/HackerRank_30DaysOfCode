@@ -7,21 +7,14 @@ public class Person {
 
 	public Person(int initialAge) {
 		if (initialAge < 0) {
-			this.age = 0;
+			age = 0;
 			System.out.println("Age is not valid, setting age to 0.");
 		} else {
-			this.age = initialAge;
+			age = initialAge;
 		}
 	}
 
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-
-	public int getAge() {
-		return age;
-	}
+	
 
 	public void amIOld() {
 		// Write code determining if this person's age is old and print the correct
@@ -36,7 +29,7 @@ public class Person {
 	}
 
 	public void yearPasses() {
-		setAge(getAge() + 1);
+		age++;
 
 	}
 
