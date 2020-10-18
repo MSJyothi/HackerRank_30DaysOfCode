@@ -5,8 +5,8 @@ import java.util.*;
 public class PrintEvenOddIndex {
 
 	public static void splitString(String input) {
-		StringBuffer left = new StringBuffer();
-		StringBuffer right = new StringBuffer();
+		StringBuilder left = new StringBuilder();
+		StringBuilder right = new StringBuilder();
 
 		for (int i = 0; i < input.length(); i++) {
 			if (i % 2 == 0) {
