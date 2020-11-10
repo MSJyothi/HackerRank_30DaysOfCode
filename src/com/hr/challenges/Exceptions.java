@@ -11,7 +11,7 @@ public class Exceptions {
 		try {
 			int number = Integer.parseInt(S);
 			System.out.println(number);
-		} catch (Exception ex) {
+		} catch (NumberFormatException ex) {
 			System.out.println("Bad String");
 		}
 	}
