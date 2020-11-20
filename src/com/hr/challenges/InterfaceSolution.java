@@ -17,6 +17,22 @@ class Calculater implements AdvancedArithmetic {
 		}
 		return sum;
 	}
+	
+	//Editorial solution 
+	public int divisorSum1(int n) {
+		int sum = 0;
+		for (int i = 1; i * i <= n; i++) {
+			if (n % i == 0) {
+				if (i != n / i)
+					sum += i;
+
+				sum += (n / i);
+
+			}
+		}
+		
+		return sum;
+	}
 }
 
 class InterfaceSolution {
